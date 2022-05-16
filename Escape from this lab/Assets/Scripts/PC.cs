@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
@@ -84,8 +83,6 @@ public class PC : MonoBehaviour
         if (_selectedObectId < _focusList.Count-1)
         {
             _selectedObectId++;
-            Debug.Log(_selectedObectId);
-            Debug.Log(_focusList.Count);
         }
 
         else
@@ -124,7 +121,6 @@ public class PC : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //_player = collision.gameObject;
             _playerInZone = true;
         }
     }
